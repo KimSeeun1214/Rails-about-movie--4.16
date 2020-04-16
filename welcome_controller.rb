@@ -1,3 +1,4 @@
+#app/controllers
 class WelcomeController < ApplicationController
   def index
 	@message = "Hello! It is me!!!"
