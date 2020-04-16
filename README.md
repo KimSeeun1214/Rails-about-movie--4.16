@@ -17,11 +17,14 @@ resource :moives
 # + rake db:migrate
 db 수정
 
-# 5. app/controller/movies_conroller.rb 내용 작성
+# 5. app/models/movie.rb 작성
+validates :title, presence: true, length: {minimum: 5}
 
-# 6. app/views/movies에서
+# 6. app/controller/movies_conroller.rb 내용 작성
+
+# 7. app/views/movies에서
 index, new, edit, show, _form 5개의 html.erb 작성
 
-# 7. rails server
+# 8. rails server
 서버 구동
 mySimpleApp에서 하셔야 합니다!
